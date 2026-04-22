@@ -1,0 +1,43 @@
+/* Color variables */
+:root {
+  --color-green: #4caf50;
+  --color-orange: #ff9800;
+  --color-pink: #e91e63;
+  --color-blue: #2196f3;
+  --color-purple: #9c27b0;
+  --color-white: #ffffff;
+}
+
+/* Container */
+.typewriter-container {
+  display: inline-block;
+  font-family: "Courier New", monospace;
+  font-size: 28px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Text + cursor */
+.role-text {
+  position: relative;
+}
+
+/* Blinking cursor */
+.role-text::after {
+  content: "|";
+  margin-left: 6px;
+  animation: blinkCursor 0.8s infinite;
+}
+
+/* Cursor animation */
+@keyframes blinkCursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
