@@ -316,8 +316,8 @@ Body{
 .attachs{
 display:flex;
 align-items: center;
-
-
+padding-left: 250px;
+padding-top:10px;
 }
 .attachs button {
    font-size:18px;
@@ -332,7 +332,9 @@ align-items: center;
    position:relative;
    overflow: hidden;
    margin-right: 20px
-
+}
+.attachs button:hover{
+  background-color: rgb(190, 154, 181);
 }
 
 
