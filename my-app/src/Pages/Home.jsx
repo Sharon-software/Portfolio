@@ -2,12 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import "../index.css";
 import image1 from "../Pictures/image1.jpeg"
 import image2 from  "../Pictures/image2.jpeg"
-import image3 from "../Pictures/image3.jpeg"
+import photo3 from "../Pictures/photo3.jpeg"
+import logo from "../Pictures/logo.jpg"
 
 const roles = [
-  { text: "A Software Developer", color: "green" },
+  
   { text: "A FrontEnd Developer", color: "yellow" },
   { text: "A Backend Developer", color: "pink" },
+  { text: "A Web Developer", color: "green" },
   { text: "A UI Designer", color: "orange" },
   { text: "A Tech Enthusiast", color: "blue" },
   { text: "ALL OF THAT.", color: "purple",},
@@ -22,6 +24,7 @@ const Home = () => {
   const [currentText, setCurrentText] = useState("");
   const [currentColor, setCurrentColor] = useState(roles[0].color);
   const roleIndexRef = useRef(0);
+
 
   useEffect(() => {
     let cancelled = false;
@@ -62,11 +65,33 @@ const Home = () => {
 
   return (
     <>
+     
+
       <h1>Mathebula Tiyisela Sharon</h1>
       <div className="typewriter-container">
         <span className="role-text" style={{ color: currentColor }}>
           {currentText}
         </span>
+      </div>
+       <div className="cont">
+      <div classname="about-me">
+      <p>
+      I am deeply passionate about software development — <br/> 
+      From the moment I write the first line of code to the satisfaction of watching a fully functional application come to life, <br/> 
+      every step of the process fuels my curiosity and drives me to grow. <br/> 
+      I thrive on solving complex problems,<br/> 
+       turning ideas into elegant digital experiences, <br/> 
+       and constantly pushing the boundaries of what I can build. <br/>  
+       For me, code is more than syntax — it's a language through which I tell stories, solve real-world problems. 
+       
+
+      </p>
+
+      <div className="attachs">
+        <button>Download CV</button>
+        <button>Talk to my AI agent</button>
+
+      </div>
       </div>
 
       <div className="Pictures">
@@ -77,8 +102,11 @@ const Home = () => {
        <div className="border-middle"></div>
        <div className="border-inner"></div>
        <div className="border-container"></div>
-        <img src={image2} alt="Profile 1" />
+        <img src={photo3} alt="Profile 1" />
       </div>
+      </div>
+
+      
     </>
   );
 };

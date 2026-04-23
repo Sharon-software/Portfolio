@@ -1,14 +1,17 @@
 h1{
   padding-top:100px;
   font-size:50px;
-  color:#e7bae7
+  color:#c5bdc5;
+
+  padding-left:70px;
 }
 .role-text{
   padding-left:70px;
   font-size:20px;
 }
 Body{
-  background-color: rgb(196, 174, 196);
+  background-image:url('./Pictures/bg.jpg');
+
 }
 #menu {
   position: fixed;
@@ -133,7 +136,7 @@ Body{
 .typewriter-container {
   display: inline-block;
   font-family: "Courier New", monospace;
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -164,15 +167,15 @@ Body{
 }
 .Pictures {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin-left: auto;
   margin-right: 10%;
 }
 
 .Pictures img {
-  width: 240px;
-  height: 240px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   position: absolute;
@@ -181,7 +184,7 @@ Body{
   transform: translate(-50%, -50%);
   z-index: 20; 
   box-shadow: 0px 10px rgb(160, 55, 146);
-  border: 4px solid rgb(188, 170, 192);
+  border: 0px;
   transition: all 0.5s ease;
 }
 
@@ -192,13 +195,13 @@ Body{
 /* ─── Rotating borders ───────────────────── */
 .border-outer {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: conic-gradient(transparent, rgb(182, 164, 184), transparent, transparent);
+  background: conic-gradient(transparent, rgb(160, 52, 172), transparent, transparent);
   z-index: 3;
   animation: rotate 4s linear infinite;
 }
@@ -225,7 +228,7 @@ Body{
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: conic-gradient(transparent, rgb(175, 79, 162), transparent, transparent);
+  background: conic-gradient(transparent, rgb(165, 7, 144), transparent, transparent);
   z-index: 5;
   animation: rotate 2s linear infinite;
 }
@@ -238,7 +241,7 @@ Body{
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  border: 2px solid rgb(212, 113, 199);
+  border: 2px solid rgb(170, 140, 166);
   z-index: 1;
   animation: pulse 3s ease-out infinite;
 }
@@ -268,7 +271,7 @@ Body{
   position: absolute;
   width: 242px; 
   height: 242px;
-  background: linear-gradient(175deg, rgb(168, 120, 168), rgb(163, 106, 160));
+  background: linear-gradient(175deg, rgb(158, 17, 158), rgb(116, 16, 111));
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -301,6 +304,39 @@ Body{
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
 }
+
+.cont{
+  display: flex;
+}
+.cont p{
+  color:rgb(201, 194, 201);
+  padding-left:70px;
+  text-align: center;
+}
+.attachs{
+display:flex;
+align-items: center;
+
+
+}
+.attachs button {
+   font-size:18px;
+   font-weight:bold;
+   color:bisque;
+   background-color: transparent;
+   text-decoration: none;
+   border:2px solid white;
+   border-radius: 5px;
+   box-shadow: 0 0 10px antiquewhite , 0 0 20px burlywood, 0 0 30px brown;
+   transition:all 0.4s ease;
+   position:relative;
+   overflow: hidden;
+   margin-right: 20px
+
+}
+
+
+
 
 
 /* ─── Large Screen (hide hamburger, show inline nav) ─── */
