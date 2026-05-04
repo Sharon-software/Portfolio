@@ -10,7 +10,12 @@ h1{
   font-size:20px;
 }
 Body{
-  background-image:url('./Pictures/bg.jpg');
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url('./Pictures/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
 
 }
 #menu {
@@ -35,7 +40,7 @@ Body{
   display: block;
   width: 100%;
   height: 3px;
-  background-color: var(--color-white);
+  background-color: white;
   border-radius: 3px;
   transition: transform 0.4s ease, opacity 0.3s ease;
   transform-origin: center;
@@ -171,6 +176,7 @@ Body{
   height: 400px;
   margin-left: auto;
   margin-right: 10%;
+  margin-top: -100px;
 }
 
 .Pictures img {
@@ -179,11 +185,11 @@ Body{
   object-fit: cover;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
   left: 50%;
+  top:50%;
   transform: translate(-50%, -50%);
   z-index: 20; 
-  box-shadow: 0px 10px rgb(160, 55, 146);
+  box-shadow: 0px 10px rgb(175, 136, 170);
   border: 0px;
   transition: all 0.5s ease;
 }
@@ -201,7 +207,7 @@ Body{
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: conic-gradient(transparent, rgb(160, 52, 172), transparent, transparent);
+  background: conic-gradient(transparent, rgb(157, 127, 160), transparent, transparent);
   z-index: 3;
   animation: rotate 4s linear infinite;
 }
@@ -214,7 +220,7 @@ Body{
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: conic-gradient(transparent, rgb(69, 1, 71), transparent, transparent);
+  background: conic-gradient(transparent, rgb(170, 111, 172), transparent, transparent);
   z-index: 4;
   animation: rotate-reverse 3s linear infinite;
   filter: blur(5px);
@@ -228,7 +234,7 @@ Body{
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: conic-gradient(transparent, rgb(165, 7, 144), transparent, transparent);
+  background: conic-gradient(transparent, rgb(187, 112, 177), transparent, transparent);
   z-index: 5;
   animation: rotate 2s linear infinite;
 }
@@ -307,6 +313,7 @@ Body{
 
 .cont{
   display: flex;
+  
 }
 .cont p{
   color:rgb(201, 194, 201);
@@ -325,16 +332,16 @@ padding-top:10px;
    color:bisque;
    background-color: transparent;
    text-decoration: none;
-   border:2px solid rgb(43, 7, 54);
+   border:2px solid rgb(192, 183, 155);
    border-radius: 5px;
-   box-shadow: 0 0 10px rgb(129, 72, 124) , 0 0 20px rgb(95, 2, 99), 0 0 30px rgb(163, 127, 158);
+   box-shadow: 0 0 10px rgb(155, 145, 120) , 0 0 20px rgb(175, 155, 131), 0 0 30px rgb(231, 230, 226);
    transition:all 0.4s ease;
    position:relative;
    overflow: hidden;
    margin-right: 20px
 }
 .attachs button:hover{
-  background-color: rgb(5, 5, 5);
+  background-color:rgb(216, 200, 180); ;
 }
 
 

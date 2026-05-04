@@ -4,7 +4,7 @@ import image1 from "../Pictures/image1.jpeg"
 import image2 from  "../Pictures/image2.jpeg"
 import photo3 from "../Pictures/photo3.jpeg"
 import logo from "../Pictures/logo.jpg"
-
+import img from "../Pictures/img.jpg"
 const roles = [
   
   { text: "A FrontEnd Developer", color: "yellow" },
@@ -88,9 +88,12 @@ const Home = () => {
       </p>
 
       <div className="attachs">
-        <button>Download CV</button>
+        <a href="/cv.pdf" download="cv.pdf">
+         <button>Download CV</button>
+         </a>
+         <a href="https://creator.voiceflow.com/share/69f89b253ee4fb7bf5d42c23/development" >
         <button>Talk to my AI agent</button>
-
+          </a>
       </div>
       </div>
 
@@ -102,7 +105,7 @@ const Home = () => {
        <div className="border-middle"></div>
        <div className="border-inner"></div>
        <div className="border-container"></div>
-        <img src={photo3} alt="Profile 1" />
+        <img src={img} alt="Profile 1" />
       </div>
       </div>
 
