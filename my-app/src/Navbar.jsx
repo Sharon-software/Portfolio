@@ -2,6 +2,7 @@ import { useState, useEffect,useRef } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
 import './index.css';
 
+
 const Navbar = () => {
 
   const navigate=useNavigate();

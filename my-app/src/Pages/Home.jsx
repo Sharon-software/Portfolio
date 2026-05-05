@@ -91,7 +91,7 @@ const Home = () => {
         <a href="/cv.pdf" download="cv.pdf">
          <button>Download CV</button>
          </a>
-         <a href="https://creator.voiceflow.com/share/69f89b253ee4fb7bf5d42c23/development" >
+         <a href="https://sharon-ai-buddy.lovable.app/" >
         <button>Talk to my AI agent</button>
           </a>
       </div>
