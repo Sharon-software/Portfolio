@@ -71,13 +71,6 @@ const Navbar = () => {
             <span className="text">Projects</span>
         </NavLink>
         </li>
-       
-        <li>
-        <NavLink to="/skills" onClick={handleLinkClick}>
-            
-            <span className="text">Skills</span>
-        </NavLink>
-        </li>
 
         <li>
         <NavLink to="/contact" onClick={handleLinkClick}>
