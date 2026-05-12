@@ -473,7 +473,7 @@ animation-delay: 1s;
   position:absolute;
   bottom:50px;
   left:45px;
-  color:rgb(101, 104, 99);
+  color:rgb(150, 89, 11);
   text-shadow: 2px 2px 6px green;
   text-align:center;
 }
@@ -592,7 +592,7 @@ animation-delay: 1s;
   font-size:1.8rem;
   font-weight:bold;
   margin-bottom:15px;
-  color:rgb(163, 173, 170);
+  color:rgb(168, 166, 165);
 }
 .card-description2 p{
   font-size:1rem;
@@ -615,10 +615,6 @@ animation-delay: 1s;
   color:rgb(152, 155, 154);
   border:1px solid rgb(153, 155, 153);
 }
-
-
-
-
 
 
 /* ─── Large Screen (hide hamburger, show inline nav) ─── */
@@ -650,5 +646,264 @@ animation-delay: 1s;
   /* Smaller text for desktop nav */
   .navigation .text {
     font-size: 1rem;
+  }
+}
+
+
+
+/* ─── Tablet: 481px – 767px ──────────────────────────────── */
+@media (max-width: 767px) {
+
+  /* Hero headings & role text — smaller but keep left-aligned */
+  h1 {
+    padding-top: 50px;
+    font-size: 26px;
+    padding-left: 16px;
+  }
+
+  .role-text {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+
+  .typewriter-container {
+    font-size: 14px;
+  }
+
+  /* Keep .cont as row — image stays on the side */
+  .cont {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cont p {
+    padding-left: 16px;
+    padding-right: 8px;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  /* Shrink the picture container to fit beside text */
+  .Pictures {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    margin-right: 5%;
+    margin-top: -30px;
+  }
+
+  .Pictures img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .border-outer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .border-middle {
+    width: 136px;
+    height: 136px;
+  }
+
+  .border-inner {
+    width: 125px;
+    height: 125px;
+  }
+
+  .pulse-ring {
+    width: 148px;
+    height: 148px;
+  }
+
+  .border-container {
+    width: 148px;
+    height: 148px;
+  }
+
+  .border-container::after {
+    width: 118px;
+    height: 118px;
+  }
+
+  /* Buttons: explicit flex row, wraps cleanly */
+  .attachs {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 16px;
+  padding-top: 12px;
+  gap: 10px;
+    
+  }
+
+  .attachs button {
+   font-size: 13px;
+  padding: 8px 14px;
+  margin-right: 0;
+  }
+
+  /* About Me section text */
+  .Content h1 {
+    font-size: 2rem;
+    padding: 0 16px;
+  }
+
+  .Content p {
+    font-size: 1.1rem;
+    padding: 0 16px;
+  }
+
+  /* Projects section */
+  .Projects h1 {
+    font-size: 32px;
+  }
+
+  .Projects p {
+    font-size: 16px;
+    padding: 0 16px;
+  }
+
+  /* Cards: stack vertically */
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+
+  .card,
+  .card2 {
+    width: 90vw;
+    max-width: 360px;
+    height: 480px;
+  }
+}
+
+/* ─── Mobile: up to 480px ────────────────────────────────── */
+@media (max-width: 480px) {
+
+  h1 {
+    padding-top: 40px;
+    font-size: 20px;
+    padding-left: 12px;
+  }
+
+  .role-text {
+    padding-left: 12px;
+    font-size: 12px;
+  }
+
+  .typewriter-container {
+    font-size: 12px;
+  }
+
+  /* Keep side-by-side, just shrink the image further */
+  .cont {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cont p {
+    font-size: 11px;
+    padding-left: 12px;
+    padding-right: 6px;
+    text-align: left;
+  }
+
+  .Pictures {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    margin-right: 4%;
+    margin-top: -20px;
+  }
+
+  .Pictures img {
+    width: 105px;
+    height: 105px;
+  }
+
+  .border-outer {
+    width: 150px;
+    height: 150px;
+  }
+
+  .border-middle {
+    width: 102px;
+    height: 102px;
+  }
+
+  .border-inner {
+    width: 94px;
+    height: 94px;
+  }
+
+  .pulse-ring {
+    width: 112px;
+    height: 112px;
+  }
+
+  .border-container {
+    width: 112px;
+    height: 112px;
+  }
+
+  .border-container::after {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Buttons: explicit flex row, wraps cleanly */
+  .attachs {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 12px;
+  padding-top: 10px;
+  gap: 8px;
+  }
+
+  .attachs button {
+  font-size: 12px;
+  padding: 6px 10px;
+  margin-right: 0;
+  }
+  /* Cards full width on small screens */
+  .card,
+  .card2 {
+    width: 95vw;
+    height: 450px;
+  }
+
+  .card-subtitle,
+  .card-subtitle2 {
+    margin-top: 330px;
+  }
+
+  .Content h1 {
+    font-size: 1.5rem;
+  }
+
+  .Content p {
+    font-size: 1rem;
+  }
+
+  /* AboutMe section: allow scroll on very small screens */
+  .AboutMe {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .Projects h1 {
+    font-size: 26px;
+  }
+
+  .Projects p {
+    font-size: 14px;
   }
 }
