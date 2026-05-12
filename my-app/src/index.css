@@ -19,7 +19,7 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
-
+  background-attachment: scroll;
 }
 #menu {
   position: fixed;
@@ -654,7 +654,9 @@ animation-delay: 1s;
 /* ─── Tablet: 481px – 767px ──────────────────────────────── */
 @media (max-width: 767px) {
 
-  /* Hero headings & role text — smaller but keep left-aligned */
+  body {
+  background-attachment: scroll;
+}
   h1 {
     padding-top: 50px;
     font-size: 26px;
@@ -786,6 +788,9 @@ animation-delay: 1s;
 /* ─── Mobile: up to 480px ────────────────────────────────── */
 @media (max-width: 480px) {
 
+  body {
+  background-attachment: scroll;
+}
   h1 {
     padding-top: 40px;
     font-size: 20px;

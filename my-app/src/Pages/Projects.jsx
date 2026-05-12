@@ -15,6 +15,8 @@ const Projects = () => {
          skills in building funtional user-friendly websites.
       </p>
     <div className='wrapper'>
+     
+     
     <div className="card">
       <div className="front-page">
         <div className="card-Info">
