@@ -1,7 +1,4 @@
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   height: 100%;
 }
 .home,
@@ -9,7 +6,9 @@ html {
 .Projects,
 .contact-wrapper {
   scroll-snap-align: start;
+  scroll-snap-stop: always;   
   height: 100vh;
+  min-height: -webkit-fill-available;
 }
 h1{
   padding-top:100px;
@@ -25,7 +24,9 @@ h1{
 
 body{
   height: 100%;
+  overflow-y: scroll;
   overflow-x: hidden;
+   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
   background-image: url('./Pictures/bg.jpg');
   background-size: cover;
@@ -918,6 +919,11 @@ animation-delay: 1s;
 
 
 @media (max-width: 480px) {
+  .AboutMe {
+    height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-y: auto; 
+  }
   .contact-wrapper {
     padding: 40px 16px;
   }
@@ -985,6 +991,9 @@ animation-delay: 1s;
   .navigation .text {
     font-size: 1rem;
   }
+  .social-icon {
+    padding-top:1px;
+  }
 }
 
 
@@ -999,6 +1008,9 @@ animation-delay: 1s;
     padding-top: 50px;
     font-size: 26px;
     padding-left: 16px;
+  }
+  .social-icon {
+    padding-top: 10px;
   }
 
   .role-text {
@@ -1164,7 +1176,7 @@ animation-delay: 1s;
     font-size: 12px;
   }
 
-  /* Keep side-by-side, just shrink the image further */
+  /* Keep side-by-side, */
   .cont {
     flex-direction: row;
     align-items: center;
