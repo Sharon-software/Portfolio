@@ -5,6 +5,8 @@ import image2 from  "../Pictures/image2.jpeg"
 import photo3 from "../Pictures/photo3.jpeg"
 import logo from "../Pictures/logo.jpg"
 import img from "../Pictures/img.jpg"
+import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
+
 const roles = [
   
   { text: "A FrontEnd Developer", color: "yellow" },
@@ -108,8 +110,20 @@ const Home = () => {
         <img src={img} alt="Profile 1" />
       </div>
       </div>
+      <footer>
+      <div className="social-links">
+              <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer" className="social-icon whatsapp">
+                <FaWhatsapp />
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer" className="social-icon github">
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="social-icon linkedin">
+                <FaLinkedin />
+              </a>
+            </div>
 
-      
+      </footer>
     </>
   );
 };

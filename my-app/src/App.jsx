@@ -3,10 +3,11 @@ import Home from './Pages/Home';
 import Navbar from './Navbar'
 import About from './Pages/About'
 import Projects from './Pages/Projects'
-import Skills from './Pages/Skills'
 import Contact from './Pages/Contact'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react' 
+import ScrollToPage from "./ScrollToPage";
+import PageIndicator from "./PageIndicator";
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -22,12 +23,13 @@ function App(){
 return(
     <BrowserRouter>
     <ScrollToTop />
+     <ScrollToPage />
     <Navbar/>
+    <PageIndicator />
     <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/projects" element={<Projects />} />
-    <Route path="/skills" element={<Skills />} />
     <Route path="/contact" element={<Contact />} />
     </Routes>
 
