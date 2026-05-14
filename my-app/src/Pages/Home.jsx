@@ -80,11 +80,8 @@ const Home = () => {
       <p>
       I am deeply passionate about software development — <br/> 
       From the moment I write the first line of code to the satisfaction of watching a fully functional application come to life, <br/> 
-      every step of the process fuels my curiosity and drives me to grow. <br/> 
-      I thrive on solving complex problems,<br/> 
-       turning ideas into elegant digital experiences, <br/> 
-       and constantly pushing the boundaries of what I can build. <br/>  
-       For me, code is more than syntax — it's a language through which I tell stories, solve real-world problems. 
+      every step of the process fuels my curiosity and drives me to grow. <br/>  
+      For me, code is more than syntax — it's a language through which I tell stories, solve real-world problems. 
        
 
       </p>
