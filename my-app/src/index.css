@@ -955,6 +955,7 @@ animation-delay: 1s;
   .navigation .text {
     font-size: 1rem;
   }
+  
   .social-links {
      margin-top: 80px;
   padding-bottom: 20px;
@@ -1115,6 +1116,10 @@ animation-delay: 1s;
   .contact-form button {
     width: 100%;
     text-align: center;
+  }
+   .home-link{
+    margin-top: 250px;
+    padding-bottom:5px;
   }
 }
 
@@ -1283,7 +1288,7 @@ animation-delay: 1s;
     font-size: 15px;
   }
   .home-link{
-    margin-top: 250px;
+    margin-top: 200px;
     padding-bottom:5px;
   }
  .social-links{
