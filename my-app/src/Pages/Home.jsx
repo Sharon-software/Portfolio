@@ -109,6 +109,7 @@ const Home = () => {
       </div>
       <footer>
       <div className="social-links">
+      <div className="home-link">
               <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer" className="social-icon whatsapp">
                 <FaWhatsapp />
               </a>
@@ -119,6 +120,7 @@ const Home = () => {
                 <FaLinkedin />
               </a>
             </div>
+      </div>
 
       </footer>
     </>
