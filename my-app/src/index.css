@@ -1039,13 +1039,11 @@ animation-delay: 1s;
 
   /* Buttons: explicit flex row, wraps cleanly */
   .attachs {
-    display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex;
   align-items: center;
   padding-left: 16px;
   padding-top: 12px;
-  gap: 10px;
+  padding-left: 250px;
     
   }
 
@@ -1192,13 +1190,13 @@ animation-delay: 1s;
 
   /* Buttons: explicit flex row, wraps cleanly */
   .attachs {
-  display: flex;
+  display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   padding-left: 12px;
   padding-top: 10px;
-  gap:4px;
+  gap:8px;
   }
 
   .attachs button {
