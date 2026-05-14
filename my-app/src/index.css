@@ -949,7 +949,7 @@ animation-delay: 1s;
   .navigation .text {
     font-size: 1rem;
   }
-  .social-icon {
+  .social-links {
     padding-top:1px;
   }
 }
@@ -967,8 +967,8 @@ animation-delay: 1s;
     font-size: 26px;
     padding-left: 16px;
   }
-  .social-icon {
-    padding-top: 10px;
+  .social-links {
+    padding-top:0px;
   }
 
   .role-text {
@@ -1273,5 +1273,8 @@ animation-delay: 1s;
 
   .contact-form button {
     font-size: 15px;
+  }
+  .social-links{
+    padding-top:1px;
   }
 }
