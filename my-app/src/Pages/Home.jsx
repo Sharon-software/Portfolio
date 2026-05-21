@@ -110,10 +110,10 @@ const Home = () => {
       <footer>
       <div className="social-links">
       <div className="home-link">
-              <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer" className="social-icon whatsapp">
+              <a href="https://wa.me/27698783115" target="_blank" rel="noreferrer" className="social-icon whatsapp">
                 <FaWhatsapp />
               </a>
-              <a href="https://github.com/" target="_blank" rel="noreferrer" className="social-icon github">
+              <a href="https://github.com/sharon-software" target="_blank" rel="noreferrer" className="social-icon github">
                 <FaGithub />
               </a>
               <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="social-icon linkedin">
