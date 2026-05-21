@@ -42,7 +42,79 @@ const Projects = () => {
         </div>
       </div>
      </div>
- 
+
+     {/* DATA ANALYSIS */}
+     <div className="card4">
+      <div className="front-page4">
+        <div className="card-Info4">
+          
+         </div>
+          </div>
+          
+    
+      <div className='back-page4'>
+        <div className='card-content4'>
+          <h3>DATA ANALYSIS</h3>
+          <p className='card-description4'>  
+            An interactive data analytics web app. Upload your data, explore it visually, and download the results .
+          </p>
+
+         <a href="https://data-analytics-ewshccrnni4fq4zzyeyzda.streamlit.app/" >
+        <button className='card-button4'>Explore More</button>
+        </a>
+
+        </div>
+      </div>
+     </div>
+
+     {/* CLEAR ANALYTICS*/}
+      <div className="card5">
+      <div className="front-page5">
+        <div className="card-Info5">
+          
+         </div>
+          </div>
+          
+    
+      <div className='back-page5'>
+        <div className='card-content5'>
+          <h3>CLEAR ANALYSIS</h3>
+          <p className='card-description5'>  
+            An AI interactive data analytics web app. Upload your data, explore it visually, and download the results .
+          </p>
+
+         <a href="https://clranalytics.lovable.app" >
+        <button className='card-button5'>Explore More</button>
+        </a>
+
+        </div>
+      </div>
+     </div>
+
+       {/*FINDLY AI*/}
+      <div className="card6">
+      <div className="front-page6">
+        <div className="card-Info6">
+          
+         </div>
+          </div>
+          
+    
+      <div className='back-page6'>
+        <div className='card-content6'>
+          <h3>FINDLY AI</h3>
+          <p className='card-description6'>  
+            Findly is an AI-powered shopping assistant that lets users search real products across multiple stores, 
+            compare prices, track items, and receive deal alerts — all in one modern, responsive web app.
+          </p>
+
+         <a href="https://findlyai-shopping-a-dxic.bolt.host/" >
+        <button className='card-button6'>Explore More</button>
+        </a>
+
+        </div>
+      </div>
+     </div>
 
      {/* Everything beauty card */}
     <div className="card">
@@ -71,6 +143,7 @@ const Projects = () => {
       </div>
      </div>
      
+     {/* AGRICIRCLE CARD */}
       <div className="card2">
     <div className="front-page2">
       <div className="card-Info2">

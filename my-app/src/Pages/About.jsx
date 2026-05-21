@@ -27,12 +27,14 @@ const About = () => {
         I am a passionate and driven software developer with 2 years of hands-on industry <br/>
         experience and a solid academic foundation in IT Software Development 
         from <span style={style}>Tshwane University of Technology.</span><br/>
-        Committed to continuous growth,
+
         I am currently enrolled at <span style={style}>CAPACITI</span> covering Cloud Computing,<br/>
         Software Development, and Artificial Intelligence.
         My learning journey is further supported by short course certificates
-        in<br/> Full Stack Development from  <span style={style}>FNB Academy and IT Varsity,</span>  <br/>
-        as well as an AI Foundations certificate from <span style={style}>Oracle.</span>
+        in<br/> 
+        Full Stack Development from  <span style={style}>FNB Academy and IT Varsity,</span>  <br/>
+        AI Foundations certificate from <span style={style}>Oracle.</span><br/>
+        AI For everyone certificate from <span style={style}>Coursera.</span> 
         These experiences have equipped me with a well-rounded,<br/>
         modern skill set that spans front-end and back-end development
         cloud technologies, and emerging AI concepts.<br/>

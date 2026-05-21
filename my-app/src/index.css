@@ -455,270 +455,304 @@ animation-delay: 1s;
   padding:0;
   box-sizing: border-box;
 }
-.wrapper{
-  perspective:3000px;
- display:flex;
- gap: 35px;
- padding-left:20px;
- 
+/* ─── Projects Wrapper ───────────────────────── */
+.wrapper {
+  perspective: 3000px;
+  display: flex;
+  gap: 35px;
+  padding-left: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 35px;
 }
-.card{
-  width:360px;
-  height:530px;
-  transform-style:preserve-3d;
-  transition:transform .8s ease-in-out;
-  cursor:pointer;
-  border:1px rgb(204, 109, 98);
-  box-shadow:5px 5px 10px rgb(185, 126, 104), -5px -5px 10px white;
+
+/* ─── Base Card Style (ALL CARDS) ────────────── */
+.card,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  width: 360px;
+  height: 530px;
+  transform-style: preserve-3d;
+  transition: transform .8s ease-in-out;
+  cursor: pointer;
+  border: 1px rgb(204, 109, 98);
+  box-shadow: 5px 5px 10px rgb(185, 126, 104),
+              -5px -5px 10px white;
+  border-radius: 15px;
+  position: relative;
+}
+
+/* ─── Hover Flip ─────────────────────────────── */
+.card:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover {
+  transform: rotateY(180deg);
+}
+
+/* ─── Front + Back Pages ─────────────────────── */
+.front-page,
+.back-page,
+.front-page2,
+.back-page2,
+.front-page3,
+.back-page3,
+.front-page4,
+.back-page4,
+.front-page5,
+.back-page5,
+.front-page6,
+.back-page6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   border-radius: 15px;
 }
-.card:hover{
-  transform:rotateY(180deg);
+
+/* ─── Front Pages ─────────────────────────────── */
+.front-page {
+  background-image: url("./Pictures/bsckC.jpg");
+  background-size: cover;
 }
-.front-page,.back-page{
+
+.front-page2 {
+  background-image: url("./Pictures/agriC.jpg");
+  background-size: cover;
+}
+
+.front-page3 {
+  background-image: url("./Pictures/gcbg.jpeg");
+  background-size: cover;
+}
+
+.front-page4 {
+  background-image: url("./Pictures/dataanalysis.jpeg");
+  background-size: cover;
+}
+.front-page5 {
+  background-image: url("./Pictures/clear.jpg");
+  background-size: cover;
+}
+.front-page6 {
+  background-image: url("./Pictures/findBack.jpeg");
+  background-size: cover;
+}
+/* ─── Card Info (Front Text) ─────────────────── */
+.card-info,
+.card-info2,
+.card-info3,
+.card-info4,
+.card-info5,
+.card-info6 {
   position: absolute;
-  width:100%;
-  height:100%;
-  backface-visibility: hidden;
-  border-radius:15px;
-}
-.front-page{
-  background-image:url("./Pictures/bsckC.jpg");
-  background-size:cover;
-
-}
-.card-info{
-  position:absolute;
-  bottom:50px;
-  left:45px;
-  color:rgb(150, 89, 11);
-  text-shadow: 2px 2px 6px green;
-  text-align:center;
+  bottom: 50px;
+  left: 45px;
+  text-align: center;
 }
 
-.card-title{
-  font-size:2rem;
-  font-weight:bold;
-  color:#c5bdc5;
+/* ─── Titles ─────────────────────────────────── */
+.card-title,
+.card-title2,
+.card-title3,
+.card-title4,
+.card-title5,
+.card-title6 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c5bdc5;
 }
-.card-subtitle{
-   margin-top:400px;
+
+/* ─── Subtitles (FIXED GROUP STYLE) ──────────── */
+.card-subtitle,
+.card-subtitle2,
+.card-subtitle3 {
+  margin-top:350px;
 }
+
+/* ─── Back Pages Layout FIX ──────────────────── */
 .back-page{
-  background-color:rgb(153, 105, 151);
-  color:#c5bdc5;
-  justify-content: center;
-  align-items: center;
-  transform:rotateY(180deg);
+ background-color: rgb(153, 105, 151);
+  color: #c5bdc5;
+  transform: rotateY(180deg);
   box-shadow: 0 20px 40px rgb(156, 160, 156);
 
-}
-
-.card-content{
-  text-align:center;
-  padding:20px;
-  max-width:300px;
-
-}
-.card-content h3{
-  font-size:1.8rem;
-  font-weight:bold;
-  margin-bottom:15px;
-
-}
-.card-description{
-  font-size:1rem;
-  color:rgb(163, 173, 170);
-  margin-bottom:20px;
-  line-height:1.6;
-}
-.card-button{
-  background-color: #d1a6d1;
-  color:rgb(233, 216, 250);
-  padding:12px 24px;
-  font-size:1rem;
-  border:none;
-  border-radius:25px;
-  transition:all 0.3s ease;
-
-}
-.card-button:hover{
-  background-color: transparent;
-  color:rgb(195, 185, 196);
-  border:1px solid rgb(161, 149, 163);
-}
-
-/* card 2*/
-.card2{
-  width:360px;
-  height:530px;
-  transform-style:preserve-3d;
-  transition:transform .8s ease-in-out;
-  cursor:pointer;
-  border:1px rgb(204, 109, 98);
-  box-shadow:5px 5px 10px rgb(185, 126, 104), -5px -5px 10px white;
-  border-radius: 15px;
-}
-.card2:hover{
-  transform:rotateY(180deg);
-}
-.front-page2,.back-page2{
-  position: absolute;
-  width:100%;
-  height:100%;
-  backface-visibility: hidden;
-  border-radius:15px;
-}
-.front-page2{
-  background-image:url("./Pictures/agriC.jpg");
-  background-size:cover;
-
-}
-.card-info2{
-  position:absolute;
-  bottom:50px;
-  left:45px;
-  color:rgb(136, 156, 117);
-  text-shadow: 2px 2px 6px rgb(210, 214, 210);
-  text-align:center;
-}
-
-.card-title2{
-  font-size:2rem;
-  font-weight:bold;
-  color:#c5bdc5;
-}
-.card-subtitle2{
-   margin-top:400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 .back-page2{
-  background-color:rgb(62, 68, 54);
-  justify-content: center;
-  align-items: center;
-  transform:rotateY(180deg);
-  box-shadow: 0 20px 40px rgb(154, 158, 154);
-
-}
-
-.card-content2{
-  text-align:center;
-  padding:20px;
-  max-width:300px;
-
-}
-.card-content2 h3{
-  font-size:1.8rem;
-  font-weight:bold;
-  margin-bottom:15px;
-  color:rgb(168, 166, 165);
-}
-.card-description2 p{
-  font-size:1rem;
-  color:rgb(224, 224, 210);
-  margin-bottom:20px;
-  line-height:1.19;
-}
-.card-button2{
-  background-color: #47524e;
-  color:rgb(153, 185, 160);
-  padding:12px 24px;
-  font-size:1rem;
-  border:none;
-  border-radius:25px;
-  transition:all 0.3s ease;
-
-}
-.card-button2:hover{
-  background-color: transparent;
-  color:rgb(152, 155, 154);
-  border:1px solid rgb(153, 155, 153);
-}
-/* gencraft */
-.card3{
-  width:360px;
-  height:530px;
-  transform-style:preserve-3d;
-  transition:transform .8s ease-in-out;
-  cursor:pointer;
-  border:1px rgb(204, 109, 98);
-  box-shadow:5px 5px 10px rgb(185, 126, 104), -5px -5px 10px white;
-  border-radius: 15px;
-}
-.card3:hover{
-  transform:rotateY(180deg);
-}
-.front-page3,.back-page3{
-  position: absolute;
-  width:100%;
-  height:100%;
-  backface-visibility: hidden;
-  border-radius:15px;
-}
-.front-page3{
-  background-image:url("./Pictures/gcbg.jpeg");
-  background-size:cover;
-
-}
-.card-info3{
-  position:absolute;
-  bottom:50px;
-  left:45px;
-  color:rgb(150, 89, 11);
-  text-shadow: 2px 2px 6px green;
-  text-align:center;
-}
-
-.card-title3{
-  font-size:2rem;
-  font-weight:bold;
-  color:#c5bdc5;
-}
-.card-subtitle3{
-   margin-top:400px;
-}
-.back-page3{
-  background-color:rgb(39, 1, 38);
-  color:#c5bdc5;
-  justify-content: center;
-  align-items: center;
-  transform:rotateY(180deg);
+background-color: rgb(53, 58, 32);
+  color: #e9dee9;
+  transform: rotateY(180deg);
   box-shadow: 0 20px 40px rgb(156, 160, 156);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.back-page3{
+background-color: rgb(116, 76, 139);
+  color: #d6e2e4;
+  transform: rotateY(180deg);
+  box-shadow: 0 20px 40px rgb(156, 160, 156);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.back-page4 {
+ background-color: rgb(130, 167, 221);
+  color: #d9eaeb;
+  transform: rotateY(180deg);
+  box-shadow: 0 20px 40px rgb(156, 160, 156);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.back-page5 {
+ background-color: rgb(130, 167, 221);
+  color: #d9eaeb;
+  transform: rotateY(180deg);
+  box-shadow: 0 20px 40px rgb(156, 160, 156);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.back-page6 {
+ background-color: rgb(70, 31, 8);
+  color: #d9eaeb;
+  transform: rotateY(180deg);
+  box-shadow: 0 20px 40px rgb(156, 160, 156);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 
-.card-content3{
-  text-align:center;
-  padding:20px;
-  max-width:300px;
-
+/* ─── Card Content ───────────────────────────── */
+.card-content,
+.card-content2,
+.card-content3,
+.card-content4,
+.card-content5,
+.card-content6{
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
 }
-.card-content3 h3{
-  font-size:1.8rem;
-  font-weight:bold;
-  margin-bottom:15px;
 
+/* ─── Headings inside back ───────────────────── */
+.card-content h3,
+.card-content2 h3,
+.card-content3 h3,
+.card-content4 h3,
+.card-content5 h3,
+.card-content6 h3{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
-.card-description3{
-  font-size:1rem;
-  color:rgb(163, 173, 170);
-  margin-bottom:20px;
-  line-height:1.6;
+
+/* ─── Descriptions ───────────────────────────── */
+.card-description,
+.card-description2,
+.card-description3,
+.card-description4,
+.card-description5,
+.card-description6{
+  font-size: 1rem;
+  color: rgb(163, 173, 170);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* ─── Buttons ────────────────────────────────── */
+.card-button{
+ background-color: #8345a0;
+  color: rgb(233, 216, 250);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.card-button2{
+ background-color: #0b7421;
+  color: rgb(233, 216, 250);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
 .card-button3{
-  background-color: #9e469e;
-  color:rgb(32, 2, 44);
-  padding:12px 24px;
-  font-size:1rem;
-  border:none;
-  border-radius:25px;
-  transition:all 0.3s ease;
+ background-color: #d1a6d1;
+  color: rgb(233, 216, 250);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.card-button4{
+ background-color: #5e8ec5;
+  color: rgb(233, 216, 250);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.card-button5{
+  background-color: #2a66aa;
+  color: rgb(233, 216, 250);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.card-button6{
+  background-color: #be7f4b;
+  color: rgb(233, 216, 250);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
 
-}
-.card-button3:hover{
+.card-button:hover,
+.card-button2:hover,
+.card-button3:hover,
+.card-button4:hover,
+.card-button5:hover,
+.card-button6:hover {
   background-color: transparent;
-  color:rgb(195, 185, 196);
-  border:1px solid rgb(161, 149, 163);
+  border: 1px solid rgb(161, 149, 163);
+  color: rgb(195, 185, 196);
 }
+
 
 /* ─── Contact Page ───────────────────────────────────────── */
 .contact-wrapper {
@@ -1092,7 +1126,7 @@ animation-delay: 1s;
   }
 
   .card,
-  .card2,.card3 {
+  .card2,.card3,.card4,.card5,.card6 {
     width: 90vw;
     max-width: 360px;
     height: 480px;
@@ -1217,13 +1251,13 @@ animation-delay: 1s;
   }
   /* Cards full width on small screens */
   .card,
-  .card2,.card3 {
+  .card2,.card3,.card4,.card5,.card6 {
     width: 95vw;
     height: 450px;
   }
 
   .card-subtitle,
-  .card-subtitle2,.card-subtitle3 {
+  .card-subtitle2,.card-subtitle3,.card-subtitle4,.card-subtitle5,.card-subtitle6 {
     margin-top: 330px;
   }
 
