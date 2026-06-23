@@ -116,7 +116,7 @@ const Home = () => {
               <a href="https://github.com/sharon-software" target="_blank" rel="noreferrer" className="social-icon github">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="social-icon linkedin">
+              <a href="www.linkedin.com/in/sharon-mathebula-118302250" target="_blank" rel="noreferrer" className="social-icon linkedin">
                 <FaLinkedin />
               </a>
             </div>
