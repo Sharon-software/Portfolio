@@ -16,32 +16,6 @@ const Projects = () => {
       </p>
     <div className='wrapper'>
 
-        {/* Gencraft */}
-       <div className="card3">
-      <div className="front-page3">
-        <div className="card-Info3">
-          <h2 className="card-title3">GenCraft </h2>
-          <p className="card-subtitle3"> <span style={style}>A Content Generator</span></p>
-
-          </div>
-          </div>
-          
-    
-      <div className='back-page3'>
-        <div className='card-content3'>
-          <h3>Gencraft</h3>
-          <p className='card-description3'>  Create stunning images, write content, and generate code — all 
-            in one AI-powered platform.
-
-          </p>
-
-         <a href="https://gencraft.lovable.app/" >
-        <button className='card-button3'>Explore More</button>
-        </a>
-
-        </div>
-      </div>
-     </div>
      {/* Everything beauty card */}
     <div className="card">
       <div className="front-page">
@@ -68,7 +42,7 @@ const Projects = () => {
         </div>
       </div>
      </div>
-     
+
      {/* AGRICIRCLE CARD */}
       <div className="card2">
     <div className="front-page2">
@@ -95,6 +69,33 @@ const Projects = () => {
       </div>
     </div>
   </div>
+
+     {/* Gencraft */}
+       <div className="card3">
+      <div className="front-page3">
+        <div className="card-Info3">
+          <h2 className="card-title3">GenCraft </h2>
+          <p className="card-subtitle3"> <span style={style}>A Content Generator</span></p>
+
+          </div>
+          </div>
+          
+    
+      <div className='back-page3'>
+        <div className='card-content3'>
+          <h3>Gencraft</h3>
+          <p className='card-description3'>  Create stunning images, write content, and generate code — all 
+            in one AI-powered platform.
+
+          </p>
+
+         <a href="https://gencraft.lovable.app/" >
+        <button className='card-button3'>Explore More</button>
+        </a>
+
+        </div>
+      </div>
+     </div>
 
      {/* DATA ANALYSIS */}
      <div className="card4">
