@@ -527,7 +527,7 @@ animation-delay: 1s;
 }
 
 .front-page3 {
-  background-image: url("./Pictures/gcbg.jpeg");
+  background-image: url("./Pictures/bbbg.jpg");
   background-size: cover;
 }
 
@@ -601,10 +601,10 @@ background-color: rgb(53, 58, 32);
   text-align: center;
 }
 .back-page3{
-background-color: rgb(116, 76, 139);
+background-color: rgb(94, 90, 66);
   color: #d6e2e4;
   transform: rotateY(180deg);
-  box-shadow: 0 20px 40px rgb(156, 160, 156);
+  box-shadow: 0 20px 40px rgb(195, 197, 195);
 
   display: flex;
   justify-content: center;

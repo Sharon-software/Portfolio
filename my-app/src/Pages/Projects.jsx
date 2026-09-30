@@ -35,8 +35,34 @@ const Projects = () => {
              professionals. 
           </p>
 
-         <a href="https://github.com/Sharon-software/EverythingBeautyApp" >
+         <a href="https://everythingbeauty-web.onrender.com/" >
         <button className='card-button'>Explore More</button>
+        </a>
+
+        </div>
+      </div>
+     </div>
+
+       {/* INVESTOR APP */}
+     <div className="card4">
+      <div className="front-page4">
+        <div className="card-Info4">
+          
+         </div>
+          </div>
+          
+    
+      <div className='back-page4'>
+        <div className='card-content4'>
+          <h3>INVESTOR APP</h3>
+          <p className='card-description4'>  
+            Demo investment portfolio application where 
+            users can register and log in, view sample investment products, 
+            deposit or withdraw funds, invest, review their portfolio.
+          </p>
+
+         <a href="https://investor-app-frontend-fbps.onrender.com/" >
+        <button className='card-button4'>Explore More</button>
         </a>
 
         </div>
@@ -97,29 +123,7 @@ const Projects = () => {
       </div>
      </div>
 
-     {/* DATA ANALYSIS */}
-     <div className="card4">
-      <div className="front-page4">
-        <div className="card-Info4">
-          
-         </div>
-          </div>
-          
-    
-      <div className='back-page4'>
-        <div className='card-content4'>
-          <h3>DATA ANALYSIS</h3>
-          <p className='card-description4'>  
-            An interactive data analytics web app. Upload your data, explore it visually, and download the results .
-          </p>
-
-         <a href="https://data-analytics-ewshccrnni4fq4zzyeyzda.streamlit.app/" >
-        <button className='card-button4'>Explore More</button>
-        </a>
-
-        </div>
-      </div>
-     </div>
+   
 
      {/* CLEAR ANALYTICS*/}
       <div className="card5">
