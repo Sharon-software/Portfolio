@@ -527,12 +527,12 @@ animation-delay: 1s;
 }
 
 .front-page3 {
-  background-image: url("./Pictures/bbbg.jpg");
+  background-image: url("./Pictures/gcbg.jpeg");
   background-size: cover;
 }
 
 .front-page4 {
-  background-image: url("./Pictures/dataanalysis.jpeg");
+  background-image: url("./Pictures/bbbg.jpg");
   background-size: cover;
 }
 .front-page5 {
@@ -601,10 +601,10 @@ background-color: rgb(53, 58, 32);
   text-align: center;
 }
 .back-page3{
-background-color: rgb(94, 90, 66);
+background-color: rgb(116, 76, 139);
   color: #d6e2e4;
   transform: rotateY(180deg);
-  box-shadow: 0 20px 40px rgb(195, 197, 195);
+  box-shadow: 0 20px 40px rgb(156, 160, 156);
 
   display: flex;
   justify-content: center;
@@ -613,8 +613,8 @@ background-color: rgb(94, 90, 66);
   text-align: center;
 }
 .back-page4 {
- background-color: rgb(130, 167, 221);
-  color: #d9eaeb;
+ background-color: rgb(75, 73, 63);
+  color: #eff0d4;
   transform: rotateY(180deg);
   box-shadow: 0 20px 40px rgb(156, 160, 156);
 
