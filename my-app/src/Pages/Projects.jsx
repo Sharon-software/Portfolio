@@ -47,6 +47,8 @@ const Projects = () => {
      <div className="card4">
       <div className="front-page4">
         <div className="card-Info4">
+          <h2 className="card-title4">INVESTOR APP</h2>
+           <p className="card-subtitle4"> <span style={style}> Demo investment portfolio application  </span></p>
           
          </div>
           </div>
